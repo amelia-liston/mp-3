@@ -7,6 +7,7 @@ const HeaderWrapper=styled.header`
     align-items: center;
     justify-content: center;
     font-size: calc(2px + 2vw);
+    background-color: gray;
 `;
 
 export default function Header() {

@@ -1,4 +1,5 @@
 import './App.css'
+import styled from 'styled-components';
 import Employment from './components/pages/Employment.tsx';
 import About from './components/pages/About.tsx';
 import Nav from './components/Nav';
@@ -8,7 +9,13 @@ import Achievements from './components/pages/Achievements.tsx';
 import Education from './components/pages/Education.tsx';
 import Activities from './components/pages/Activities.tsx';
 import Projects from './components/pages/Projects.tsx';
+import StyledContainer from "./components/styled-components/StyledContainer.tsx";
 import { createBrowserRouter, Route, RouterProvider, Routes} from "react-router";
+
+const PageWrapper=styled.div`
+    width: 80%;
+    margin: 0 auto;
+`;
 
 function Root(){
     return(
@@ -35,9 +42,13 @@ const router=createBrowserRouter(
 export default function App(){
     return (
         <>
-            <Header />
-            <RouterProvider router={router}/>
-            <Footer />
+            <PageWrapper>
+                <Header />
+                <StyledContainer>
+                    <RouterProvider router={router}/>
+                </StyledContainer>
+                <Footer />
+            </PageWrapper>
         </>
     );
 }

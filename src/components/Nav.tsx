@@ -1,24 +1,50 @@
 import { Link } from "react-router";
 import styled from "styled-components";
 
-const StyledNav = styled.nav`
-    width: 30%;
+const StyledLink = styled(Link)`
+    padding: 0.25rem;
+    margin: 0.25rem;
+    text-decoration: none;
+    color: rebeccapurple;
 `;
 
+const StyledNav=styled.nav`
+    justify-content: space-between;
+    width: 30%;
+    background-color: lavender;
+`;
 
+const StyledList=styled.ul`
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: lavender;
+    text-align: center;
+`;
+
+const StyledListItem=styled.li`
+    font-size: calc(1.5px + 1.5vw);
+    width: 80%;
+    background-color:rgb(206, 206, 247);
+    padding: 2vh 0;
+    margin: 5vh auto;
+    border-radius: 7%;
+`;
 
 export default function Nav() {
     return (
         <>
             <StyledNav>
-                <ul>
-                    <li><Link to={"/"}>About</Link></li>
-                    <li><Link to={"/employment"}>Employment</Link></li>
-                    <li><Link to={"/achievements"}>Achievements</Link></li>
-                    <li><Link to={"/education"}>Education</Link></li>
-                    <li><Link to={"/activities"}>Activities</Link></li>
-                    <li><Link to={"/projects"}>Projects</Link></li>
-                </ul>
+                <StyledList>
+                    <StyledListItem><StyledLink to={"/"}>About</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to={"/employment"}>Employment</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to={"/achievements"}>Achievements</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to={"/education"}>Education</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to={"/activities"}>Activities</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to={"/projects"}>Projects</StyledLink></StyledListItem>
+                </StyledList>
             </StyledNav>
         </>
     )
