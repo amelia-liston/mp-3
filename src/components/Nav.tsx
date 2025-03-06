@@ -1,9 +1,16 @@
 import { Link } from "react-router";
+import styled from "styled-components";
+
+const StyledNav = styled.nav`
+    width: 30%;
+`;
+
+
 
 export default function Nav() {
     return (
         <>
-            <nav>
+            <StyledNav>
                 <ul>
                     <li><Link to={"/"}>About</Link></li>
                     <li><Link to={"/employment"}>Employment</Link></li>
@@ -12,7 +19,7 @@ export default function Nav() {
                     <li><Link to={"/activities"}>Activities</Link></li>
                     <li><Link to={"/projects"}>Projects</Link></li>
                 </ul>
-            </nav>
+            </StyledNav>
         </>
     )
 }

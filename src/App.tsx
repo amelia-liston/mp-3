@@ -1,11 +1,13 @@
 import './App.css'
-import Employment from './components/Employment';
-import About from './components/About';
+import Employment from './components/pages/Employment.tsx';
+import About from './components/pages/About.tsx';
 import Nav from './components/Nav';
-import Achievements from './components/Achievements';
-import Education from './components/Education';
-import Activities from './components/Activities';
-import Projects from './components/Projects';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Achievements from './components/pages/Achievements.tsx';
+import Education from './components/pages/Education.tsx';
+import Activities from './components/pages/Activities.tsx';
+import Projects from './components/pages/Projects.tsx';
 import { createBrowserRouter, Route, RouterProvider, Routes} from "react-router";
 
 function Root(){
@@ -33,7 +35,9 @@ const router=createBrowserRouter(
 export default function App(){
     return (
         <>
+            <Header />
             <RouterProvider router={router}/>
+            <Footer />
         </>
-    )
+    );
 }
