@@ -25,7 +25,7 @@ const StyledList=styled.ul`
 `;
 
 const StyledListItem=styled.li`
-    font-size: calc(1.5px + 1.5vw);
+    font-size: calc(2px + 1.5vw);
     width: 80%;
     background-color:rgb(206, 206, 247);
     padding: 2vh 0;

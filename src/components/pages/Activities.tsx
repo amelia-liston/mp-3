@@ -1,7 +1,12 @@
+import StyledMain from '../styled-components/StyledMain.tsx';
+
 export default function Activities(){
     return(
         <>
-            <h1>Activities</h1>
+            <StyledMain>
+                <h1>Activities</h1>
+                <p>content for activities</p>
+            </StyledMain>
         </>
     );
 }

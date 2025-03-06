@@ -1,7 +1,12 @@
+import StyledMain from '../styled-components/StyledMain.tsx';
+
 export default function Projects() {
     return(
         <>
-            <h1>Projects</h1>
+            <StyledMain>
+                <h1>Projects</h1>
+                <p>content for projects</p>
+            </StyledMain>
         </>
     );
 }

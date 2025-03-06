@@ -1,7 +1,12 @@
+import StyledMain from '../styled-components/StyledMain.tsx';
+
 export default function Employment() {
     return(
         <>
-            <h1>Employment</h1>
+            <StyledMain>
+                <h1>Employment</h1>
+                <p>content for employment</p>
+            </StyledMain>
         </>
     )
 }
