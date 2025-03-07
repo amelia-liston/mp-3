@@ -45,7 +45,7 @@ const StyledListItem=styled.li`
     border-radius: 7%;
     
     @media screen and (max-width: 750px){
-        padding: 1% .5%;
+        padding: 1% .25%;
         margin: 1% .5%;
     }
 `;

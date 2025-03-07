@@ -14,7 +14,7 @@ const StyledRowContainer=styled.div`
     flex-direction: row;
 `;
 
-export default function About() {
+export default function Home() {
     return(
         <>
             <StyledMain>

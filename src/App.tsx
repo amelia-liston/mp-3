@@ -1,7 +1,7 @@
 import './App.css'
 import styled from 'styled-components';
 import Employment from './components/pages/Employment.tsx';
-import About from './components/pages/About.tsx';
+import Home from './components/pages/Home.tsx';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -25,13 +25,13 @@ function Root(){
                 <StyledContainer>
                     <Nav />
                     <Routes>
-                        <Route path="/" element={ <About /> } />
+                        <Route path="/" element={ <Home /> } />
                         <Route path="/employment" element={ <Employment />} />
                         <Route path="/achievements" element={ <Achievements /> } />
                         <Route path="/education" element={ <Education />} />
                         <Route path="/activities" element={ <Activities />} />
                         <Route path="/projects" element={ <Projects />} />
-                        <Route path="/credits" element={ <About />} />
+                        <Route path="/credits" element={ <Home />} />
                     </Routes>
                 </StyledContainer>
                 <Footer />

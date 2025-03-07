@@ -5,8 +5,35 @@ import StyledHeader2 from "../styled-components/StyledHeader2.tsx";
 import { useEffect, useState } from "react";
 
 export default function Projects() {
-    const [result, setResult] = useState();
+    const [result, setResult] = useState<number>();
 
+    function addition(){
+        setResult(1+1);
+    }
+
+    function subtraction(){
+        setResult(3-3);
+    }
+
+    function multiply(){
+        setResult(-4);
+    }
+
+    function divide(){
+        setResult(1);
+    }
+
+    function power(){
+        setResult(5);
+    }
+
+    function clearAll(){
+        setResult(0);
+    }
+
+    useEffect(() => {
+        
+    }, []);
     return(
         <>
             <StyledMain>
@@ -75,6 +102,13 @@ export default function Projects() {
                 <div>
                     <input type="number" placeholder={"Number 1"} />
                     <input type="number" placeholder={"Number 2"} />
+                    <button onClick={addition}>+</button>
+                    <button onClick={subtraction}>-</button>
+                    <button onClick={multiply}>*</button>
+                    <button onClick={divide}>/</button>
+                    <button onClick={power}>**</button>
+                    <button onClick={clearAll}>clear</button>
+                    <p>{result}</p>
                 </div>
                 <div id="calc-buttons">
 
