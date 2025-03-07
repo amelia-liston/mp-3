@@ -20,15 +20,22 @@ const PageWrapper=styled.div`
 function Root(){
     return(
         <>
-            <Nav />
-            <Routes>
-                <Route path="/" element={ <About /> } />
-                <Route path="/employment" element={ <Employment />} />
-                <Route path="/achievements" element={ <Achievements /> } />
-                <Route path="/education" element={ <Education />} />
-                <Route path="/activities" element={ <Activities />} />
-                <Route path="/projects" element={ <Projects />} />
-            </Routes>
+            <PageWrapper>
+                <Header />
+                <StyledContainer>
+                    <Nav />
+                    <Routes>
+                        <Route path="/" element={ <About /> } />
+                        <Route path="/employment" element={ <Employment />} />
+                        <Route path="/achievements" element={ <Achievements /> } />
+                        <Route path="/education" element={ <Education />} />
+                        <Route path="/activities" element={ <Activities />} />
+                        <Route path="/projects" element={ <Projects />} />
+                        <Route path="/credits" element={ <About />} />
+                    </Routes>
+                </StyledContainer>
+                <Footer />
+            </PageWrapper>
         </>
     );
 }
@@ -42,13 +49,7 @@ const router=createBrowserRouter(
 export default function App(){
     return (
         <>
-            <PageWrapper>
-                <Header />
-                <StyledContainer>
-                    <RouterProvider router={router}/>
-                </StyledContainer>
-                <Footer />
-            </PageWrapper>
+            <RouterProvider router={router}/>
         </>
     );
 }

@@ -21,7 +21,7 @@ export default function Header() {
         <>
             <HeaderWrapper>
                 <h1>Amelia Liston</h1>
-                <p>My online resume</p>
+                <p>{}</p>
             </HeaderWrapper>
         </>
     )

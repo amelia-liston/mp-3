@@ -1,8 +1,12 @@
 import StyledMain from '../styled-components/StyledMain.tsx';
 import StyledContentSection from '../styled-components/StyledContentSection';
 import StyledHeader1 from '../styled-components/StyledHeader1';
+import StyledHeader2 from "../styled-components/StyledHeader2.tsx";
+import { useEffect, useState } from "react";
 
 export default function Projects() {
+    const [result, setResult] = useState();
+
     return(
         <>
             <StyledMain>
@@ -33,7 +37,8 @@ export default function Projects() {
                     <h3>BUGH</h3>
                     <h4>Tech Stack: React Remix, HTML, CSS, Figma</h4>
                     <p>
-                        On October 7, 2023 I participated in Spark!'s Mini-Hack event. Our idea is an app that is connected to
+                        On October 7, 2023 I participated in Spark!'s Mini-Hack event. Our idea is an app that is
+                        connected to
                         GrubHub at BU that both allows students to deliver
                         food for one another and allowed students
                         to resell their orders when they were unable to pick up their orders. Our idea touched on two
@@ -55,7 +60,8 @@ export default function Projects() {
                     <h3>Space News</h3>
                     <h4>Tech Stack: React</h4>
                     <p>
-                        During the spring semester of my sophomore year at BU, I took CS391 Software Engineering. In this
+                        During the spring semester of my sophomore year at BU, I took CS391 Software Engineering. In
+                        this
                         class, one of the assignments was
                         this project called Space News. We were given the code for general structure of the website, and
                         were tasked with adding a News page and
@@ -65,6 +71,18 @@ export default function Projects() {
                         such as pagination, search functionality, and summary statistics.
                     </p>
                 </StyledContentSection>
+                <StyledHeader2>Calculator</StyledHeader2>
+                <div>
+                    <input type="number" placeholder={"Number 1"} />
+                    <input type="number" placeholder={"Number 2"} />
+                </div>
+                <div id="calc-buttons">
+
+                </div>
+                <div >
+                    <h4>Result:</h4>
+                    <h4 id="output"></h4>
+                </div>
             </StyledMain>
         </>
     );

@@ -8,7 +8,7 @@ export default function Activities(){
     return(
         <>
             <StyledMain>
-                <StyledHeader1>Activities</StyledHeader1>
+                <StyledHeader1>Leadership</StyledHeader1>
                 <StyledContentSection>
                     <h3>Girls Who Code E-Board | January 2023 - Present</h3>
                     <h4><i>President / Vice President / Bytes Lead</i></h4>
@@ -50,7 +50,7 @@ export default function Activities(){
                         </li>
                     </ul>
                 </StyledContentSection>
-                <h2>Activities</h2>
+                <StyledHeader1>Activities</StyledHeader1>
                 <StyledUL>
                     <li>Grace Hopper Convention | October 2024</li>
                     <li>Spark! Civic Tech Hackathon | Spring 2024</li>
