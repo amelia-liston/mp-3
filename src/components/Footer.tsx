@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from "react-router";
 
 const StyledFooter=styled.footer`
     position: relative;
@@ -13,7 +14,7 @@ export default function Footer(){
     return(
         <>
             <StyledFooter>
-                <p>All rights reserved by Amelia Liston</p>
+                {/*<p>All rights reserved by Amelia Liston <Link to={`/credits`}>Credits</Link> &#169;</p>*/}
             </StyledFooter>
         </>
     );

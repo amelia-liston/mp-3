@@ -12,6 +12,10 @@ const StyledNav=styled.nav`
     justify-content: space-between;
     width: 30%;
     background-color: lavender;
+
+    @media screen and (max-width: 750px){
+        width: 100%;
+    }
 `;
 
 const StyledList=styled.ul`
@@ -22,6 +26,14 @@ const StyledList=styled.ul`
     justify-content: space-evenly;
     background-color: lavender;
     text-align: center;
+    
+    @media screen and (max-width: 750px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 0;
+    }
 `;
 
 const StyledListItem=styled.li`
@@ -31,6 +43,12 @@ const StyledListItem=styled.li`
     padding: 2vh 0;
     margin: 5vh auto;
     border-radius: 7%;
+    
+    @media screen and (max-width: 750px){
+        font-size: calc(2px + 1.5vw);
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
 `;
 
 export default function Nav() {

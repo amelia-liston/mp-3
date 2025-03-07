@@ -5,6 +5,10 @@ const StyledContainer=styled.div`
     display: flex;
     flex-direction: row;
     position: relative;
+    
+    @media screen and (max-width: 750px){
+        flex-direction: column;
+    }
 `;
 
 export default StyledContainer;

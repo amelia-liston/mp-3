@@ -8,6 +8,10 @@ const StyledMain=styled.main`
     background-color: rgb(216, 255, 218);
     text-align: center;
     padding: 2vh 2vw;
+    
+    @media screen and (max-width: 750px){
+        width: 100%;
+    }
 `;
 
 export default StyledMain;
