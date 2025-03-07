@@ -1,16 +1,13 @@
 import StyledMain from '../styled-components/StyledMain.tsx';
-import styled from 'styled-components';
+import StyledContentSection from '../styled-components/StyledContentSection';
 
-const StyledExperience = styled.div`
-    text-align: left;
-`;
 
 export default function Employment() {
     return(
         <>
             <StyledMain>
                 <h1>Employment</h1>
-                <StyledExperience>
+                <StyledContentSection>
                     <h3>Apple | Cupertino, CA | Summer 2024</h3>
                     <h4><i>Software Engineering Intern</i></h4>
                     <ul>
@@ -22,9 +19,9 @@ export default function Employment() {
                             features with existing customers’ needs.
                         </li>
                     </ul>
-                </StyledExperience>
+                </StyledContentSection>
                 <br/>
-                <StyledExperience>
+                <StyledContentSection>
                     <h3>BU Spark! | Boston, MA | January 2023 - Present</h3>
                     <h4><i>JEDI Program Manager & Ambassador</i></h4>
                     <ul>
@@ -41,9 +38,9 @@ export default function Employment() {
                             University students and faculty.
                         </li>
                     </ul>
-                </StyledExperience>
+                </StyledContentSection>
                 <br/>
-                <StyledExperience>
+                <StyledContentSection>
                     <h3>Girls Who Code Summer Immersion Program | Remote | Summer 2023</h3>
                     <h4><i>Teaching Assistant</i></h4>
                     <ul>
@@ -58,9 +55,9 @@ export default function Employment() {
                         <li>Designed and facilitated with fellow TA a discussion of DEI in Tech with <b>40+ students</b>.
                         </li>
                     </ul>
-                </StyledExperience>
+                </StyledContentSection>
                 <br/>
-                <StyledExperience>
+                <StyledContentSection>
                     <h3>Woodside Bakery & Cafe | Menlo Park, CA</h3>
                     <h4><i>Sales Clerk / Barista</i></h4>
                     <ul>
@@ -71,7 +68,7 @@ export default function Employment() {
                             espresso machine.
                         </li>
                     </ul>
-                </StyledExperience>
+                </StyledContentSection>
             </StyledMain>
         </>
     )
