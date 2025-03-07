@@ -1,12 +1,12 @@
 import StyledMain from '../styled-components/StyledMain.tsx';
 import StyledContentSection from '../styled-components/StyledContentSection';
-
+import StyledHeader1 from "../styled-components/StyledHeader1.tsx";
 
 export default function Employment() {
     return(
         <>
             <StyledMain>
-                <h1>Employment</h1>
+                <StyledHeader1>Employment</StyledHeader1>
                 <StyledContentSection>
                     <h3>Apple | Cupertino, CA | Summer 2024</h3>
                     <h4><i>Software Engineering Intern</i></h4>

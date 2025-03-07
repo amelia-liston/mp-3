@@ -1,11 +1,12 @@
 import StyledMain from '../styled-components/StyledMain.tsx';
 import StyledContentSection from '../styled-components/StyledContentSection';
+import StyledHeader1 from '../styled-components/StyledHeader1';
 
 export default function Projects() {
     return(
         <>
             <StyledMain>
-                <h1>Technical Projects</h1>
+                <StyledHeader1>Technical Projects</StyledHeader1>
                 <StyledContentSection>
                     <h3>AccessiScan</h3>
                     <h4>Tech Stack: React, TypeScript, Next.js, MongoDB, Flask, Python, HTML, CSS, JavaScript, Git </h4>
@@ -32,17 +33,8 @@ export default function Projects() {
                     <h3>BUGH</h3>
                     <h4>Tech Stack: React Remix, HTML, CSS, Figma</h4>
                     <p>
-                        On October 7, 2023 I participated in Spark!'s Mini-Hack event. The event lasted from 9 am to 9 pm
-                        beginning with forming teams,
-                        and ending with the awards ceremony. Upon entering the event, I met 5 other participants
-                        (Clarissa Chen, Rina Tsegay, Catherine Liu,
-                        Naomy Bopela, and Hannah Finn) who would become my incredible team members. The prompts for the
-                        hackathon were to build a project
-                        that addressed sustainability, food access, or education. Our team immediately became drawn to
-                        the idea of building a project related
-                        to sustainability and began brainstorming ideas that connected to reducing food waste on our
-                        college campus. We eventually landed
-                        on the idea of an app that is connected to GrubHub at BU that both allows students to deliver
+                        On October 7, 2023 I participated in Spark!'s Mini-Hack event. Our idea is an app that is connected to
+                        GrubHub at BU that both allows students to deliver
                         food for one another and allowed students
                         to resell their orders when they were unable to pick up their orders. Our idea touched on two
                         sustainability issues 1) students often
@@ -51,18 +43,9 @@ export default function Projects() {
                         emissions, and 2) students often order food on their way to class but are unable to pick up
                         their food because their orders take longer
                         than anticipated to be ready, leading to food waste.
-                        Our app offers features such as ordering for delivery which cost an extra delivery fee for
-                        students to deliver the food to them. On the
-                        other hand, students can deliver food. Let's say one student is near Starbucks and another has
-                        ordered from Starbucks to be delivered to
-                        their dorm, that student can opt to deliver that order and get paid for it, thus creating more
-                        student jobs on campus. Additionally, students
-                        can choose to resell their orders for 50% discount. When a student re-lists their orders, other
-                        students can see that listing on our other
-                        feature labelled "Discounts" where they can pay 50% for another order that has been untouched.
                         We developed our prototype for our project on Figma, and began coding a website version of the
                         app using HTML and CSS in the limited time
-                        we had. We also developed a presentation for the judges in Canva. When we were awarded Best Hack
+                        we had. When we were awarded Best Hack
                         Overall, we presented our project on stage
                         in front of the entire event.
                     </p>

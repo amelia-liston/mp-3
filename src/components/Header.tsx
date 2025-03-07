@@ -7,7 +7,9 @@ const HeaderWrapper=styled.header`
     align-items: flex-start;
     justify-content: center;
     font-size: calc(2px + 2vw);
-    background-color: gray;
+    background-color: lavender;
+    padding: 1vh 1vw;
+    color: rebeccapurple;
 
     @media screen and (max-width: 750px){
         align-items: center;

@@ -1,11 +1,14 @@
 import StyledMain from '../styled-components/StyledMain.tsx';
 import StyledContentSection from '../styled-components/StyledContentSection';
+import StyledHeader1 from "../styled-components/StyledHeader1.tsx";
+import StyledUL from "../styled-components/StyledUL";
+
 
 export default function Activities(){
     return(
         <>
             <StyledMain>
-                <h1>Activities</h1>
+                <StyledHeader1>Activities</StyledHeader1>
                 <StyledContentSection>
                     <h3>Girls Who Code E-Board | January 2023 - Present</h3>
                     <h4><i>President / Vice President / Bytes Lead</i></h4>
@@ -48,11 +51,13 @@ export default function Activities(){
                     </ul>
                 </StyledContentSection>
                 <h2>Activities</h2>
-                <h3>Grace Hopper Convention | October 2024</h3>
-                <h3>Spark! Civic Tech Hackathon | Spring 2024</h3>
-                <h3>Boston Hacks | Fall 2023</h3>
-                <h3>Spark! Mini-Hackathon | October 2023</h3>
-                <h3>Cal Hacks | June 2023</h3>
+                <StyledUL>
+                    <li>Grace Hopper Convention | October 2024</li>
+                    <li>Spark! Civic Tech Hackathon | Spring 2024</li>
+                    <li>Boston Hacks | Fall 2023</li>
+                    <li>Spark! Mini-Hackathon | October 2023</li>
+                    <li>Cal Hacks | June 2023</li>
+                </StyledUL>
             </StyledMain>
         </>
     );

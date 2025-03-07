@@ -37,7 +37,7 @@ const StyledList=styled.ul`
 `;
 
 const StyledListItem=styled.li`
-    font-size: calc(2px + 1.5vw);
+    font-size: calc(4px + 1vw);
     width: 80%;
     background-color:rgb(206, 206, 247);
     padding: 2vh 0;
@@ -45,7 +45,6 @@ const StyledListItem=styled.li`
     border-radius: 7%;
     
     @media screen and (max-width: 750px){
-        font-size: calc(2px + 1.5vw);
         padding: 1% .5%;
         margin: 1% .5%;
     }

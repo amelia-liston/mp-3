@@ -1,11 +1,12 @@
 import StyledMain from '../styled-components/StyledMain.tsx';
 import StyledContentSection from '../styled-components/StyledContentSection';
+import StyledHeader1 from "../styled-components/StyledHeader1.tsx";
 
 export default function Education() {
     return(
         <>
             <StyledMain>
-                <h1>Education</h1>
+                <StyledHeader1>Education</StyledHeader1>
                 <StyledContentSection>
                     <h3>Boston University, College of Arts and Sciences</h3>
                     <h4><i>Bachelor of Arts in Computer Science, with a minor in Business Administration</i></h4>

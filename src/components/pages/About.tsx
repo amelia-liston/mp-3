@@ -1,6 +1,7 @@
 import StyledMain from '../styled-components/StyledMain.tsx';
 import styled from 'styled-components';
 import StyledParagraph from '../styled-components/StyledParagraph';
+import StyledHeader1 from "../styled-components/StyledHeader1.tsx";
 
 const StyledImage=styled.img`
     max-width: 40%;
@@ -17,7 +18,7 @@ export default function About() {
     return(
         <>
             <StyledMain>
-                <h1>About Me</h1>
+                <StyledHeader1>About Me</StyledHeader1>
                 <StyledRowContainer>
                     <StyledImage src={"../public/amelia-headshot.jpeg"} alt="amelia"/>
                     <StyledParagraph>

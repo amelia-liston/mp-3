@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const StyledParagraph=styled.p`
+const StyledUL=styled.ul`
     text-align: left;
     font-size: calc(5px + 1vw);
 `;
 
-export default StyledParagraph;
+export default StyledUL;

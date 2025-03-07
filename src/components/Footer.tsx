@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link} from "react-router";
+// import {Link} from "react-router";
 
 const StyledFooter=styled.footer`
     position: relative;
@@ -8,6 +8,7 @@ const StyledFooter=styled.footer`
     align-items: center;
     justify-content: center;
     font-size: calc(1px + 1vw);
+    background-color: lightblue;
 `;
 
 export default function Footer(){
@@ -15,6 +16,7 @@ export default function Footer(){
         <>
             <StyledFooter>
                 {/*<p>All rights reserved by Amelia Liston <Link to={`/credits`}>Credits</Link> &#169;</p>*/}
+                <p>All rights reserved by Amelia Liston &#169;</p>
             </StyledFooter>
         </>
     );
