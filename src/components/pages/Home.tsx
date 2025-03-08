@@ -4,7 +4,7 @@ import StyledParagraph from '../styled-components/StyledParagraph';
 import StyledHeader1 from "../styled-components/StyledHeader1.tsx";
 
 const StyledImage=styled.img`
-    max-width: 40%;
+    max-width: 50%;
     margin: 1vh 1vw;
 `;
 
@@ -12,6 +12,7 @@ const StyledRowContainer=styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    position: relative;
 `;
 
 export default function Home() {
