@@ -20,7 +20,7 @@ export default function Home() {
             <StyledMain>
                 <StyledHeader1>About Me</StyledHeader1>
                 <StyledRowContainer>
-                    <StyledImage src={"../public/amelia-headshot.jpeg"} alt="amelia"/>
+                    <StyledImage src={"/amelia-headshot.jpeg"} alt="amelia"/>
                     <StyledParagraph>
                         My name is Amelia Liston, I'm a junior at <strong>Boston University</strong> pursuing a major in Computer Science and minor in Business
                         Administration. Outside of my classes, I'm President of the <strong>Girls Who Code</strong> chapter at BU, a JEDI Ambassador at BU Spark!,
