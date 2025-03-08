@@ -16,6 +16,10 @@ const StyledDivButtons = styled.div`
 const StyledInput = styled.input`
     margin-bottom: 1vw;
     border-color: green;
+
+    @media screen and (max-width: 750px){
+        font-size: calc(5px + 1vw);
+    }
 `;
 
 const StyledButton = styled.button`
@@ -23,23 +27,31 @@ const StyledButton = styled.button`
     border-radius: 10%;
     border-color: green;
     padding: 1% 2%;
-    font-size: calc(1px + 1vw);
+    font-size: calc(5px + 1vw);
+`;
+
+const StyledLabel = styled.label`
+    font-size: calc(5px + 1vw);
 `;
 
 export default function Calculator(){
     const [firstNum, setFirstNum] = useState(0);
     const [secondNum, setSecondNum] = useState(0);
+    const [result, setResult] = useState("");
+    const [color, setColor] = useState("black");
 
-    const outputElement = document.getElementById("output");
 
-    function displayResult(result: number){
-        if(outputElement!= null){
-            outputElement.innerHTML= String(result);
+    function displayResult(numResult: number){
+        if(result!= null){
+            setResult(String(numResult));
 
-            if (result < 0){
-                outputElement.style.color = "red";
+            if (numResult < 0){
+                console.log(numResult);
+                console.log(color);
+                setColor("red");
+                console.log(color);
             } else {
-                outputElement.style.color = "black";
+                setColor("black");
             }
         }
     }
@@ -78,18 +90,19 @@ export default function Calculator(){
     }
 
     function clearAll(){
-        if(outputElement != null){
-            outputElement.innerHTML = "";
+        if(result != null){
+            setResult("");
             setFirstNum(0);
             setSecondNum(0);
+            setColor("black");
         }
     }
 
     return(
         <>
             <StyledDivInputs>
-                <label id="label1">First Number: </label><StyledInput type="number" placeholder={"Number 1"} value={firstNum} onChange={(e) => setFirstNum(Number(e.target.value))} />
-                <label id="label2">Second Number: </label><StyledInput type="number" placeholder={"Number 2"} value={secondNum} onChange={(e) => setSecondNum(Number(e.target.value))} />
+                <StyledLabel id="label1">First Number: </StyledLabel><StyledInput type="number" placeholder={"Number 1"} value={firstNum} onChange={(e) => setFirstNum(Number(e.target.value))} />
+                <StyledLabel id="label2">Second Number: </StyledLabel><StyledInput type="number" placeholder={"Number 2"} value={secondNum} onChange={(e) => setSecondNum(Number(e.target.value))} />
             </StyledDivInputs>
             <StyledDivButtons>
                 <StyledButton onClick={addition}>+</StyledButton>
@@ -101,7 +114,9 @@ export default function Calculator(){
             </StyledDivButtons>
             <div >
                 <h4>Result:</h4>
-                <h4 id="output"></h4>
+                <div style={{color: color}}>
+                    {result}
+                </div>
             </div>
         </>
     )

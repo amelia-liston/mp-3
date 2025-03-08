@@ -36,7 +36,7 @@ export default function Header() {
         <>
             <HeaderWrapper>
                 <h1>Amelia Liston</h1>
-                <h2>{lastValue}</h2>
+                <p>{lastValue}</p>
             </HeaderWrapper>
         </>
     )
