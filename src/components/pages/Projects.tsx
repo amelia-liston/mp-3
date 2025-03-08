@@ -2,38 +2,10 @@ import StyledMain from '../styled-components/StyledMain.tsx';
 import StyledContentSection from '../styled-components/StyledContentSection';
 import StyledHeader1 from '../styled-components/StyledHeader1';
 import StyledHeader2 from "../styled-components/StyledHeader2.tsx";
-import { useEffect, useState } from "react";
+import Calculator from "../Calculator.tsx";
 
 export default function Projects() {
-    const [result, setResult] = useState<number>();
 
-    function addition(){
-        setResult(1+1);
-    }
-
-    function subtraction(){
-        setResult(3-3);
-    }
-
-    function multiply(){
-        setResult(-4);
-    }
-
-    function divide(){
-        setResult(1);
-    }
-
-    function power(){
-        setResult(5);
-    }
-
-    function clearAll(){
-        setResult(0);
-    }
-
-    useEffect(() => {
-        
-    }, []);
     return(
         <>
             <StyledMain>
@@ -99,24 +71,7 @@ export default function Projects() {
                     </p>
                 </StyledContentSection>
                 <StyledHeader2>Calculator</StyledHeader2>
-                <div>
-                    <input type="number" placeholder={"Number 1"} />
-                    <input type="number" placeholder={"Number 2"} />
-                    <button onClick={addition}>+</button>
-                    <button onClick={subtraction}>-</button>
-                    <button onClick={multiply}>*</button>
-                    <button onClick={divide}>/</button>
-                    <button onClick={power}>**</button>
-                    <button onClick={clearAll}>clear</button>
-                    <p>{result}</p>
-                </div>
-                <div id="calc-buttons">
-
-                </div>
-                <div >
-                    <h4>Result:</h4>
-                    <h4 id="output"></h4>
-                </div>
+                <Calculator />
             </StyledMain>
         </>
     );
