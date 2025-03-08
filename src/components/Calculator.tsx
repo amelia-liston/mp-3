@@ -1,4 +1,30 @@
 import {useState} from "react";
+import styled from "styled-components";
+
+const StyledDivInputs = styled.div`
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+`;
+
+const StyledDivButtons = styled.div`
+    text-align: center;
+    padding: 1% .5%;
+`;
+
+const StyledInput = styled.input`
+    margin-bottom: 1vw;
+    border-color: green;
+`;
+
+const StyledButton = styled.button`
+    background-color: rgb(103, 178, 103);
+    border-radius: 10%;
+    border-color: green;
+    padding: 1% 2%;
+    font-size: calc(1px + 1vw);
+`;
 
 export default function Calculator(){
     const [firstNum, setFirstNum] = useState(0);
@@ -61,19 +87,18 @@ export default function Calculator(){
 
     return(
         <>
-            <div>
-                <input type="number" placeholder={"Number 1"} value={firstNum} onChange={(e) => setFirstNum(Number(e.target.value))} />
-                <input type="number" placeholder={"Number 2"} value={secondNum} onChange={(e) => setSecondNum(Number(e.target.value))} />
-                <button onClick={addition}>+</button>
-                <button onClick={subtraction}>-</button>
-                <button onClick={multiply}>*</button>
-                <button onClick={divide}>/</button>
-                <button onClick={power}>**</button>
-                <button onClick={clearAll}>clear</button>
-            </div>
-            <div>
-
-            </div>
+            <StyledDivInputs>
+                <label id="label1">First Number: </label><StyledInput type="number" placeholder={"Number 1"} value={firstNum} onChange={(e) => setFirstNum(Number(e.target.value))} />
+                <label id="label2">Second Number: </label><StyledInput type="number" placeholder={"Number 2"} value={secondNum} onChange={(e) => setSecondNum(Number(e.target.value))} />
+            </StyledDivInputs>
+            <StyledDivButtons>
+                <StyledButton onClick={addition}>+</StyledButton>
+                <StyledButton onClick={subtraction}>-</StyledButton>
+                <StyledButton onClick={multiply}>*</StyledButton>
+                <StyledButton onClick={divide}>/</StyledButton>
+                <StyledButton onClick={power}>**</StyledButton>
+                <StyledButton onClick={clearAll}>clear</StyledButton>
+            </StyledDivButtons>
             <div >
                 <h4>Result:</h4>
                 <h4 id="output"></h4>

@@ -11,7 +11,7 @@ const StyledMain=styled.main`
     
     @media screen and (max-width: 750px){
         width: 100%;
-        height: auto;
+        height: 150vw;
     }
 `;
 

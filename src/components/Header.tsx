@@ -12,6 +12,7 @@ const HeaderWrapper=styled.header`
     background-color: lavender;
     padding: 1vh 1vw;
     color: rebeccapurple;
+    border: 0.5vw solid rebeccapurple;
 
     @media screen and (max-width: 750px){
         align-items: center;
