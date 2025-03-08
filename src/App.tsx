@@ -1,4 +1,3 @@
-import './App.css'
 import styled from 'styled-components';
 import Employment from './components/pages/Employment.tsx';
 import Home from './components/pages/Home.tsx';

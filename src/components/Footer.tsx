@@ -17,7 +17,7 @@ export default function Footer(){
     return(
         <>
             <StyledFooter>
-                <p>All rights reserved by Amelia liston <Link to={`/credits`}>Credits</Link> &#169;</p>
+                <p>All rights reserved by Amelia liston <Link to={`/credits`}>Credits</Link> &#169; </p>
             </StyledFooter>
         </>
     );
