@@ -7,7 +7,7 @@ const StyledFooter=styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(4px + 1vw);
+    font-size: calc(5px + 1vw);
     background-color: lavender;
     color: black;
     padding: 1vh 1vw;
